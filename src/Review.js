@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import peopleData from './data'
+import people from './data'
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 
 const Review = () => {
-  const [people, setPeople] = useState(peopleData)
   const [current, setCurrent] = useState(0)
 
   const { image, name, job, text } = people[current]
